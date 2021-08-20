@@ -33,6 +33,13 @@
   );
   */
 
+  $contact->smtp = array(
+    'host' => 'smtp.mailtrap.io',
+    'username' => '284339e69421e5',
+    'password' => 'da7a246c67f10b',
+    'port' => '2525'
+  );  
+
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
